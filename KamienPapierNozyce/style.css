@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+body {
+
+    background-color: #e5e5e5;
+
+    font-family: 'Poppins', sans-serif;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+
+}
+
+.Glowny-Kontener {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #FFF;
+
+    border-radius: 180px;
+
+    height: 40%;
+
+    width: 40%;
+
+    position: relative;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.Wynik-Kontener {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: transparent;
+
+    height: 60%;
+
+    width: 60%;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    top: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+    margin-top: 40px;
+
+}
+
+.Wynik-Kontener h1 {
+
+    font-size: 4rem;
+
+    color: #fca311;
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-top: 30px;
+
+}
+
+.Gra-Kontener {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: transparent;
+
+    width: 100%;
+
+    height: 100%;
+
+    position: absolute;
+
+    bottom: 0;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.Pytajnik-1 {
+
+    font-size: 15rem; 
+    
+    animation: pulse-question-mark 2s infinite;
+
+    margin-left: 20%;
+
+    margin-top: 80px;
+}
+
+.Pytajnik-2 {
+
+    font-size: 15rem; 
+    
+    animation: pulse-question-mark 2s infinite;
+
+    margin-right: 20%;
+
+    margin-top: 80px;
+}
+
+.Przyciski-Kontener {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: transparent;
+
+    height: 20%;
+
+    width: 100%;
+
+    position: absolute;
+
+    bottom: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+    justify-content: center;
+
+}
+
+@keyframes pulse-question-mark {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse-buttons {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.Przycisk-1, .Przycisk-2, .Przycisk-3 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 2.3rem;
+
+    padding: 0px 0px;
+
+    border-radius: 10px;
+
+    background-color: transparent;
+
+    color: #000000;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-bottom: 60px;
+
+    font-weight: bold;
+
+}
+
+.Przycisk-1 {
+
+    margin-right: 60px;
+
+    margin-left: 0px;
+
+    align-self: center;
+
+}
+
+.Przycisk-2 {
+
+    margin-right: 60px;
+
+    margin-left: 60px;
+
+    align-self: center;
+
+}
+
+.Przycisk-3 {
+
+    margin-right: 0px;
+
+    margin-left: 60px;
+
+    align-self: center;
+
+}
+
+.Przyciski-Kontener button {
+
+    transition: transform 0.3s ease;
+
+}
+
+.Przyciski-Kontener button:hover {
+
+    transform: scale(1.1);
+
+}
+
+.Przyciski-Kontener button:active {
+
+    animation: pulse-buttons 0.2s;
+
+}
+
+@keyframes pulse-buttons {
+
+    0% { transform: scale(1); }
+
+    50% { transform: scale(0.9); }
+
+    100% { transform: scale(1); }
+
+}
